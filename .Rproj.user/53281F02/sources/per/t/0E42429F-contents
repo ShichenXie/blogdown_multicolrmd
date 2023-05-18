@@ -1,0 +1,29 @@
+---
+title: multi-column rmarkdown
+author: Package Build
+date: '2023-05-18'
+slug: multicolrmd
+categories: []
+tags: []
+output: html_document
+---
+
+:::: {style="display: flex;"}
+
+::: {}
+Here is the **first** Div.
+
+```{r}
+str(iris)
+```
+:::
+
+::: {}
+And this block will be put on the right:
+
+```{r}
+plot(iris[, -5])
+```
+:::
+
+::::
